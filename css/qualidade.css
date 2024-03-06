@@ -1,0 +1,523 @@
+/* ESTILO GERAL */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: transparent;
+    height: 100vh;
+    display: flex;
+}
+
+header .logo img{
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.icon{
+    height: 50px;
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+.flex{
+    display: flex;
+}
+
+main{
+    width: 100%;
+}
+
+/* ESTILO DO CABEÇALHO INICIO */
+
+header {
+    background-color: #01411f;
+    box-shadow: 0px 3px 10px #464646;
+    min-height: 70px;
+    max-height: auto;
+    flex-wrap: wrap;
+    position: fixed;
+    display: flex;
+    z-index: 1;
+}
+
+.nav-bar {
+    width: 100%;
+    background-color: #01411f;
+    margin: 0 auto;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 6rem;
+    
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+    margin-top: 1%;
+}
+
+.nav-list a:hover{
+    transform: scale(1.25);
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 25px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 15px;
+    background-color: #01411f;
+}
+
+.login-button button:hover {
+    box-shadow: 0px 0px 10px black;   
+    transform: scale(1.05); 
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    color: white;
+    display: none;
+    width: 100vw;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20%;
+    background-color: #01411f;
+}
+
+@media screen and (max-width: 1200px){
+    .nav-list {
+        font-size: 15px;
+    }
+    
+    .nav-item {
+        margin: 0 10px;
+    }
+
+    .nav-bar {
+        padding: 1.5rem 1rem;
+    }
+
+    .login-button button a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+
+/* ESTILO DO CABEÇALHO FINAL */
+
+/* IMAGEM TOPO INICIO */
+
+main .topo-do-site .interface-imagem img{
+    float:left;
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    margin-top: 100px;
+}
+
+/* IMAGEM TOPO FINAL */
+
+/* POLITICA INICIO */
+
+main .corpo-do-site .Politica{
+    background-color: #04642c;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site .Politica .titulo{
+    color: black;
+    font-size: 58px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main .corpo-do-site .Politica .titulo span{
+    color: white;
+    text-align: center;
+}
+
+main .corpo-do-site .Politica .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.corpo-do-site .Politica .txt-topo-site h1{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.corpo-do-site .Politica p{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 18px;
+}
+
+main .Politica .flex .img-topo-site img{
+    width: 265px;
+    position: relative;
+    animation:  2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 1200px){
+    main .corpo-do-site .Politica .titulo{
+        width: 600px;
+        font-size: 40px;
+    }
+
+    .corpo-do-site .Politica .txt-topo-site h1{
+        width: 600px;
+    }
+    
+    .corpo-do-site .Politica p{
+        width: 600px;
+    }
+
+    main .Politica .flex .img-topo-site img{
+        width: 192px;
+    }
+}
+
+/* POLITICA FINAL */
+
+/* MEIO AMBIENTE INICIO */
+
+main .corpo-do-site .Meio-ambiente{
+    background-color: #057233;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site .Meio-ambiente .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+
+.corpo-do-site .Meio-ambiente .txt-topo-site h1{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.corpo-do-site .Meio-ambiente p{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 18px;
+}
+
+main .Meio-ambiente .flex .img-topo-site img{
+    width: 265px;
+    position: relative;
+    animation:  2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 1200px){
+    .corpo-do-site .Meio-ambiente .txt-topo-site h1{
+        width: 600px;
+    }
+    
+    .corpo-do-site .Meio-ambiente p{
+        width: 600px;
+    }
+
+    main .Meio-ambiente .flex .img-topo-site img{
+        width: 192px;
+    }
+}
+
+/* MEIO AMBIENTE FINAL */
+
+/* ETE INICIO */
+
+main .corpo-do-site .ETE{
+    background-color: #04642c;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site .ETE .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.corpo-do-site .ETE .txt-topo-site h1{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.corpo-do-site .ETE p{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 18px;
+}
+
+main .ETE .flex .img-topo-site img{
+    width: 265px;
+    position: relative;
+    animation:  2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 1200px){
+    .corpo-do-site .ETE .txt-topo-site h1{
+        width: 600px;
+    }
+    
+    .corpo-do-site .ETE p{
+        width: 600px;
+    }
+
+    main .ETE .flex .img-topo-site img{
+        width: 192px;
+    }
+}
+
+/* ETE FINAL */
+
+/* RECICLAGEM INICIO */
+
+main .corpo-do-site .Reciclagem{
+    background-color: #057233;
+    min-height: auto;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+    margin-right: 100px;
+    flex-wrap: wrap;
+}
+
+main .corpo-do-site .Reciclagem .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-wrap: wrap;
+}
+
+.corpo-do-site .Reciclagem .txt-topo-site h1{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.corpo-do-site .Reciclagem p{
+    min-width: auto;
+    max-width: 1000px;
+    color: white;
+    font-size: 18px;
+}
+
+main .Reciclagem .flex .img-topo-site img{
+    width: 265px;
+    position: relative;
+    animation:  2s ease-in-out infinite alternate;
+}
+
+@media screen and (max-width: 1200px){
+    .corpo-do-site .Reciclagem .txt-topo-site h1{
+        width: 600px;
+    }
+    
+    .corpo-do-site .Reciclagem p{
+        width: 600px;
+    }
+
+    main .Reciclagem .flex .img-topo-site img{
+        width: 192px;
+    }
+}
+
+/* RECICLAGEM FINAL */
+
+/* RODAPÉ INICIO */
+
+main .corpo-do-site-rodape .rodape{
+    background-color: #01411f;
+    min-height: 600px;
+    max-height: auto;
+    width: 100%;
+    padding: 40px 4%;
+}
+
+main .corpo-do-site-rodape .rodape .flex{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+main .rodape .img-topo-site img{
+    display: flex;
+    width: 300px;
+}
+
+.corpo-do-site-rodape .txt-topo-site h1{
+    display: flex;
+    margin-top: 40px;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    width: 10px;
+}
+
+.corpo-do-site-rodape p{
+    display: flex;
+    margin-top: 20px;
+    color: white;
+    font-size: 15px;
+    width: 250px;
+}
+
+.btn-rodape{
+    width: 770px;
+}
+
+.btn-rodape button{
+    padding: 15px;
+    width: 360px;
+    margin-bottom: 2%;
+    margin-right: 20px;
+    font-size: 18px;
+    background-color: #01411f;
+    border-radius: 30px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    border: none;
+    transition: .5s;
+    text-align: left;
+}
+
+.corpo-do-site-rodape .btn-rodape h1{
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.btn-rodape button:hover{
+    box-shadow: 0px 0px 20px black;   
+    transform: scale(1.05);  
+}
+
+/* RODAPÉ FINAL */
